@@ -23,8 +23,8 @@
     
 //     return nextFib;
 //   };
-
-// console.log(fibonacci(1))
+// console.log("start")
+// console.log(fibonacci(60))
 
 
 
@@ -34,8 +34,8 @@
 //     }
 //     return fibonacci(n - 1) + fibonacci(n - 2);
 // }
-// console.log("test start")
-// console.log(fibonacci(42));
+// console.log("test start");
+// console.log(fibonacci(43));
 
 
 
@@ -58,3 +58,17 @@
 //     }
 // }
 // console.log(memoFib(70))
+
+
+
+//Plindrom function
+
+// function isPolindrom(name){
+//     let arr = name.toLocaleLowerCase().split("");
+//     let arr1 = arr.reverse().toString()
+//     if(arr.reverse().toString()=== arr1)return true
+
+//     return false
+// }
+// console.log(isPolindrom(""))
+

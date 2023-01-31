@@ -7,9 +7,11 @@
 //     if(i == 2){
 //         continue;
 //     }
-//     sum +=i;
+//     sum +=i; //sum = sum + i
 // }
 // console.log(sum);
+
+
 
 //2.
 
@@ -20,6 +22,7 @@
 // }
 // while(i < 5)
 
+
 //3.
 
 // let sum = 0;
@@ -28,10 +31,16 @@
 //     if(i == 2){
 //         break;
 //     }
+    
 // }
 // console.log(sum);
 
+
+
+
 //4.
+
+
 
 // function divide(a , b){
 //     let res = a * b;
@@ -39,20 +48,33 @@
 // }
 // console.log(divide(4 , 5));
 
+
+
+
 //5.
+
+
+
 
 // function pow(x , y){
 //     let res = x * y
 // }
 // console.log(pow(2 ,5))
 
+
+
 //6.
+
 
 // function sayHi(){
 //     let hello = "Barev";
 // }
 // let res = sayHi();
 // console.log(res);    // ...?
+
+
+
+
 
 //7.
 
@@ -62,17 +84,28 @@
 
 // print(5,6,7,8,9,10)
 
+
 //8.
+
 
 // function print(x , y){
 //     console.log(y);
 // }
-// print(5)
+// print(5,4)
+
+
+
+
 
 //9.
 
+
 // let hello = function(){};
 // console.log(typeof hello)
+
+
+
+
 
 //10.
 
@@ -82,10 +115,13 @@
 
 //11.
 
+
+
 // var c = a * b;
 // var a = 25;
 // var b = 10;
 // console.log(c)   //.....?
+
 
 //12.
 
@@ -100,10 +136,12 @@
 
 //13.
 
+
 // say()
 // function say(){
 //     console.log("Barev")
 // }
+
 
 
 //14.
@@ -114,9 +152,11 @@
 
 //15.
 
+
 // foo();
 // let x = "Hello Students";
 // function foo(){
+    
 //     console.log(x)
 // }
 
@@ -135,6 +175,7 @@
 // function funk1(){
 //     var x = 15;
 //     funk2();
+    
 // }
 
 // function funk2(){
@@ -163,15 +204,16 @@
 
 //19.
 
-// function aaa(a , b){
+
+// function aa(a , b){
 //     console.log("BBB")
 // }
-// aaa(13 , 5)
+// aa(13,5)
 
 
 //20.
-
-// console.log("Barev" && (undefined || 100) && "hello" || (null || 65))
+                         
+ //console.log("Barev" && (undefined || 100) && "hello" || (null || 65))
 
 
 //21.
@@ -181,35 +223,40 @@
 
 //22.
 
-// console.log("AAAA" - "BBBB");   //....?
+// console.log("AAAA"- "BBBB");   //....?
 
 
 //23.
 
-// console.log(!!! null);
+//console.log(!!! null);
 
-// console.log("500" - "250")
-
+//  console.log("500" - "100")
+// console.log(typeof NaN)
 
 //24.
 
-// var f = function g(){
+
+// let f = function g(){
 //     return 23;
 // }
 
-// console.log(typeof g)  //....?
+// console.log( typeof g)  //....?
+
+
 
 //25.
 
 // console.log(f())
+
 // function f(){
 //     return 23;
 // }
-// var f = function(){
+
+// let f = function(){
 //     return 100;
 // }
-
 // console.log(f())
+
 
 
 //26.
@@ -217,29 +264,39 @@
 // var y = 1 , x = y = typeof x;
 // console.log(x)
 
-//// var y = 1;
-//// var x;
-//// y = typeof x
-//// x = y
+
+
+// var y = 1;
+// var x;
+// y = typeof x
+// x = y
 
 
 //27.
 
-// var a = "Hello";
+
+// let a = "Hello";
 
 // function b(){
+//     var a
 //     if(false){
 //         var a = "JS"
 //     }
 //     else {
 //     var b = "Students";
+    
 //     }
 //     console.log(a);
 //     console.log(b);
+    
 // }
-
 // b();
 
+//28.
+// let number = 0;
+// console.log(number++);
+// console.log(++number);
+// console.log(number);
 
   
 
