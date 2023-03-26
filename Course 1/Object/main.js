@@ -2,30 +2,30 @@
 //empty object
 
   //let dimord = {};
-// console.log(dimord);
+ //console.log(dimord);
 
 
 
-// let dimord1 = new Object()
+// let dimord1 = new Object();
 // console.log(dimord1);
 
 
 
 
-// console.log(typeof dimord); //type object
+ //console.log(typeof dimord); //type object
 
-//  dimord.anun = "Petros";
-//  dimord.azganun = "Petrosyan";
-//  dimord.tariq = 18 ;
-//  dimord["status"] = "SysAdmin";
-//  console.log(dimord);
+//   dimord.anun = "Petros";
+//   dimord.azganun = "Petrosyan";
+//   dimord.tariq = 18 ;
+//   dimord["status"] = "SysAdmin";
+  //console.log(dimord);
 
-//  dimord.anun = "Aram";
-//  console.log(dimord);
+  //dimord.anun = "Aram";
+  //console.log(dimord);
 
-// console.log(dimord.anun);
-// console.log(dimord.azganun);
-// console.log(dimord.status);
+//  console.log(dimord.anun);
+//  console.log(dimord.azganun);
+//  console.log(dimord.status);
 
 
 //Create not empty object
@@ -33,10 +33,10 @@
 //  let user = {name:"Armen",age:33,position: "admin"};
 
 //  console.log(user);
-//  user.pashton = "Administrator";
-//  console.log(user);
+//   user.pashton = "Administrator";
+//   console.log(user);
 
-//  console.log(user.status);
+//   console.log(user.status);
 
 
 // let obj = {"user name":"Armen",
@@ -54,14 +54,16 @@
 //console.log(obj.25)
 
 
-//  console.log(obj["user name"]);
-// // console.log(obj["var"]);
+//   console.log(obj["user name"]);
+// // // console.log(obj["var"]);
 //  console.log(obj["25"])
 //  console.log(obj[25]);
 //  console.log(obj[15])
 
 
 //are there that property
+
+
 
 // let obj = {"user name":"Armen",
 //             var:15, 
@@ -70,10 +72,11 @@
 //             position:"Netadmin"
 //     };
 
-//  console.log(obj);
-//  console.log("15" in obj);
-//  console.log("30" in obj);
-//  console.log("user name" in obj)
+//   console.log(obj);
+//   console.log("15" in obj);
+
+//   console.log("30" in obj);
+//   console.log("user name" in obj)
 
 
 
@@ -83,7 +86,7 @@
 // delete x;
 // console.log(x)
 
-// let y = 12 ;
+
 
 
 //new delete property x
@@ -121,13 +124,11 @@
 //     "v":"edfhd"
 // }
 
-//  console.log(user);
+//   console.log(user);
 
 // for(let i in user){
 //     console.log(i + ": " + user[i])
 // }
-
-
 
 
 
@@ -163,11 +164,11 @@
 // let obj = {a:10,b:20};
 // let obj1 = obj ; 
 
-//  obj.b = 30 ; 
-//  obj1.a = 20 ; 
+//   obj.b = 30 ; 
+//   obj1.a = 20 ; 
 
-//  console.log(obj.a)
-//  console.log(obj1.b)
+//  console.log(obj.a); // 10
+//  console.log(obj1.b); //20
 
 
 //  console.log(obj)  // ...?
@@ -175,17 +176,17 @@
 //  console.log(obj === obj1) // ...??
 
 
-// let petros = {
-//     surname:"Petrosyan",
-//     age:20
-// }
+let petros = {
+    surname:"Petrosyan",
+    age:20
+}
 
 // let poghos = {
 //     surename:"Poghosyan",
 //     age:30
 // }
 
-//   let aram = petros;
+//    let aram = petros;
 
 // for(let i in aram){
 //     console.log(aram[i])
@@ -221,20 +222,22 @@
 //     },
 
 //      "method2": function(){console.log(this.age)},
-//      "method3": tariq
+//      "method3": tariq,
+     
+
 
 // }
 
-//  // console.log(user.name)
-//   user.method1("hello")
+//   console.log(user.name)
+//    user.method1("hello")
 
-// user.method2()
+//  user.method2()
 
-//  user.method3()
+//   user.method3()
 
-//function tariq(){console.log(this.age)}
+ //function tariq(){console.log(this.age)}
 
- //tariq()
+ //tariq();
 
 
 // let user1 = {
@@ -248,24 +251,34 @@
 //2.
 
 
-// var x = 100
+// let x = 100
 
 // function func(){
 //     console.log(this.x)
 // }
 
 // func()
-// console.log(this)
+// console.log(this);
+
+
 
 // classWork
 //Կազմեկ երկու օբյեկտ որոնց անուններ են book1 և book2,որոնք ունենք 
 //հետևյալ հատկությունները և մեթոդը։
 //մեթոդը վերադարձնում է բոլոր օբյեկտների հատկությունները։
+
+
+
+
+
+
 //title , price , page_num  // membrs
 // getInfo()  // method
 
 // let book1 = {}
 // let book2 = {}
+
+
 
 // function getInfo(){}
 
@@ -297,7 +310,7 @@
 
 // function getInfo(){}
 
- //console.log(book1.getInfo())
+ //console.log(book2.getInfo())
 
 // function info(){
 //     return this.title + ",  " + this.price + ", " + this.page_num
@@ -320,11 +333,13 @@
 //     //1.2
 //     //method1:armen.method
 // }
-
+// armen.method("barev")
+// karen.method1("barev")
 // //1.1
-// karen.method1 = armen.method;
+//  karen.method1 = armen.method;
 // karen.method1("Barevner");
-// karen.method1("hello")
+// armen.method("hello")
+
 
 
 
@@ -355,33 +370,36 @@
 //     }
 // }
 
-// funk();
-// obj.print()
-// console.log(obj)
+//  //funk();
+//  obj.print()
+//  console.log(obj)
 
 
 
 //3
 
-let car = {
-    model:"Audi",
-    mark:"Q7",
-    color:"white"
-}
+// let car = {
+//     model:"Audi",
+//     mark:"Q7",
+//     color:"white"
+// }
 
-function getInfo(){
-    console.log(`
-        model: ${this.model}
-        Mark: ${this.mark}
-        color: ${this.color}
-    `)
-}
+// function getInfo(){
+//     console.log(`
+//         model: ${this.model}
+//         Mark: ${this.mark}
+//         color: ${this.color}
+//     `)
+// }
+
+
 
 //getInfo()
 
 //console.log(getInfo.bind(car))  // return another functio
 
-//getInfo.bind(car)()
+ //getInfo.bind(car)
+
 
 
 
@@ -404,7 +422,8 @@ function getInfo(){
 //     return func.length
 // }
 
-// console.log(func())
+
+//  console.log(func())
 
 //! Այն կանստրուկցիաները որոնք ունեն առվազան մեկ ստատիկ հատկություն և
 //! առնվազն մեկ դինամիկ հատկություն (մեթոդտ) կոչվում է օբյեկտ։
@@ -416,7 +435,7 @@ function getInfo(){
 //     parametr:10,
 //     method: function (){
 //         //let x = this;
-//          let test= ()=>{
+//          let test= function() {
 //             console.log(this.parametr)
 //             //console.log(x.parametr)
 //         }
@@ -424,7 +443,7 @@ function getInfo(){
 //     }
 // }
 
-// o.method(); //...???
+//  o.method(); //...???
 
 //=============================================================================
 
@@ -459,15 +478,64 @@ function getInfo(){
 //     age:233
 // } 
 
-// function funk(a){
+// function funk(a,b){
 //     console.log(this.name)
-//console.log('HEllo world');
+// console.log('HEllo world');
 //     console.log(funk.length)
 
 // console.log(arguments.length)
 // }
 
-// funk.call(armen,"Poghosyan",3)
+//funk.call(armen,"Poghosyan",3,4,7)
+
+
+
+
+//===============================================================================
+
+//!Гипотеза Коллатца 3n+1 проблема
+//Берём любое натуральное число n. Если оно чётное, то делим его на 2,
+// а если нечётное, то умножаем на 3 и прибавляем 1 (получаем 3n + 1).
+// Над полученным числом выполняем те же самые действия, и так далее.
+//Гипотеза Коллатца заключается в том, что какое бы начальное число n мы ни взяли,
+// рано или поздно мы получим единицу:
+
+
+
+// function statistic(n){
+//   let count = 0
+//   while(n != 1){
+//       if(n%2 === 0){
+//           n = n/2;
+          
+//       }else{
+//           n = (3*n + 1);
+          
+//       }
+//       count++
+//   }
+//   return count;
+// }
+
+
+
+
+
+
+//  let obj = {};
+// for(let i = 2; i <= 100000; i++){
+//   if(!obj[i]){
+//       obj[i] = statistic(i)
+//   }
+  
+//  }
+// console.log(obj)
+
+
+//  let arr = Object.entries(obj).sort((a,b)=>a[1] - b[1]) 
+//  //console.log(arr)
+//  console.log(arr[arr.length - 1])
+
 
 
 //=============================================================

@@ -10,15 +10,26 @@
 // String trimEnd()
 // String charAt()
 // String charCodeAt()
+// String indexOF()
+// String lastIndexOF
 
 
 
 
-// let srt =` Hello Armen llllo`;
+
+ //let str =` HeLlo Armen llllo`;
+
+
+
+
+
+
+
+
 
 // let count = 0;
-// for(let i = 0; i < srt.length; i++){
-//     if(srt[i] === "L"){
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === "l" || str[i] === "L"){
 //         count++
 //     }
 // }
@@ -38,12 +49,12 @@
 // console.log(length);
 
 
-// let text = "Hello Armen";
+// let text = "Hello Armen";   // [2,7)
 // let part = text.slice(2,7); 
 
 //  console.log(part)
 
-// console.log(text)
+//  console.log(text)
 
 
 
@@ -83,8 +94,8 @@
 // let text1 = "      Hello World!      ";
 // let text2 = text1.trim();
 
-//  console.log(text1)
-//  console.log(text2)
+//   console.log(text1)
+//   console.log(text2)
 
 
 
@@ -100,40 +111,64 @@
 
 
 // let text = "HELLO WORLD";
-// let char = text.charCodeAt(0);
+// let char = text.charCodeAt(1);
 
-// //console.log(char)
+// console.log(char)
 
-// console.log("a" > "D")
-// console.log("}".charCodeAt())
+//console.log("a" > "D")
+//console.log("|".charCodeAt())
 
 
 // let text = "HELLO WORLD";
 // text[0] = "A";
 
-// console.log(text)
+//  console.log(text)
 
 
 //! split() method:
 
-// let str = "HelloArmen";
-// let str1 = str.split("")
+// let str = "Hello Armen vonc es Armen";
+// let str1 = str.split(" ")
 // console.log(str1)
 
 
 // let str = "Hello Armen";
-// let str1 = str.indexOf("e")
+// let str1 = str.lastIndexOf("e")
 // console.log(str1)
+
+
+
 
 
 // գրել ֆունկցիա որը կվերադարձնի
 // true եթե տրված տեքստը պոլինդրոմ է , հակառակ դեպքում false
 
 
+// let a = "abc"
+// let b = ""
+// for(let i = 0 ; i < a.length; i++){
+//     b =  a[i] + b;
+// }
+// console.log(b)
+
+// function isPol(text){
+//     text.toLowerCase()
+//     let b = ""
+//     for(let i = 0 ; i < text.length; i++){
+//         b =  text[i] + b;
+//     }
+// }
+
+
+
+
+
+
+
 // function isPolindron(text){
-//     let text1 = text.toLowerCase()
-//     let str = text1.split("")
-//     str1 = str.reverse().join("");
+//     let text1 = text.toLowerCase();
+//     let str = text1.split("");
+//     let str1 = str.reverse().join("");
 //     if(str1 === text1){
 //          return true
 //     }else {
@@ -141,25 +176,25 @@
 //     }
 // }
 
-// console.log(isPolindron("AnnA"))
+// console.log(isPolindron(",,||,,"))
 
-// const x = function(n){
-//     if(n!= 4)
-//     x(n+1)
-//     console.log(n)
-// }
-// x(5)
 
-// x(1) -> 1 ; x(2)-> 2 ; x(3) - > 3
 
 
 //1-1000 թվերի շարքում հաշվել բոլոր այն թվերի քանակը,
 // որոնք պարունակում են 3 թվանշանը:
 
+
+
+
+
+
+
+
 // function is3(num){
 
 //    let   srt = num + "";
-//     return srt.split("").includes("3")
+//     return srt.includes("3")
 // }
 
 // let count = 0
@@ -169,7 +204,10 @@
 //     }
 // }
 
-//console.log(count)
+// console.log(count)
+
+"abafbfg"
+
 
 
 
@@ -185,14 +223,18 @@
 
 
 // function getElement(str){
+    
 //     for(let i = 0 ; i < str.length; i++){
-//         if(str.indexOf(str[i]) === str.lastIndexOf(str[i])){
+//         if(str.indexOf(str[i]) === str.lastIndexOf(str[i]) ){
 //             return str[i];
-//         }else {
-//             return "chkrknvox element chka"
-//         }
+        
 //     }
 // }
+//     return "chkrknvox element chka"
+// }
+
+
+// console.log(getElement("sdsad"))
 
 
 
@@ -239,6 +281,7 @@
 // }
 
 // console.log()
+
 
 
 

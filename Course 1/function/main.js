@@ -4,42 +4,44 @@
 // declaration
 
 
-//     function hello(){
-//         console.log("barevner")
-//     }
+    // function hello(){
+    //     console.log("barevner")
+    // }
 
 //  hello();
 //  hello();
 
-// function func(a, b) {
-//     console.log(a + b)
+// function func(a, b, c) {
+//   c = 0 || c
+//     console.log(a + b + c)
 // } 
 
-// func(4,5)
+//  func(4,5)
+ //func(10,39,40,29)
 
 
 
 //! expression
-
-
-//    var x =  function hello(){
+// console.log(x)
+  
+//    let x =  function hello(){
 //         console.log("barevner")
 //     };
-
-//      x();
+    
+    
 
 
 
 //function argumnet
 
 // function poghos(age ){
-//     // age = age || "agumnet missed"
+//      //age = age || "agumnet missed"
 
 //     console.log("I am a " + age + " years old")
 // }
 
-//  //poghos(30);
-//  poghos();
+// //  //poghos(30);
+//   poghos(34);
 
 
 
@@ -72,17 +74,17 @@
 
 
 // function sum(a1 , a2) {
-//    //let z = a1 + a2
-//      return a1 + a2 ; 
+//    let z = a1 + a2
+//     return a1 + a2 ; 
 //     // console.log()
 // }
-
+//console.log( sum(4) )
 // //  sum(0,7)
 
 // //  console.log(sum(12,8))
 
-//  var res = sum ;
- 
+//  var res = sum(3,5) ;
+//  console.log(res)
 //  console.log(sum(4,6))
 
 
@@ -98,10 +100,12 @@
 
 
 // function modul(num) {
-//     return (-1 )* num
-// }
+//   return (num < 0)? (-1) * num : num
+//   }
+  
 
 
+// console.log(modul(9))
 
 
 // // console.log(modul(-5));
@@ -117,7 +121,20 @@
 
 // ? 2. function fact(n){}  // 1*2*3* ....n
 
-
+// function fact(n){
+//   if(n === 0 || n === 1){
+//     return 1;
+//   }else if(n > 1){
+//     let res = 1;
+//     for(let i = 1 ; i <=n ; i++){
+//       res = res * i // res *=i
+//     }
+//       return res;
+//   }else {
+//     return "chi kareli hashvel bacasakan tvi factorial"
+//   }
+// }
+// console.log(fact())
 
 //? 3. function power(a,b){} a^b ; power(3 ,4) -> 81
 
@@ -146,19 +163,20 @@
 //   return res;
 // }
 // }
-// console.log(pow(2,-2))
+//  console.log(pow(-3,2))
 
 
 
 
 // local variables 
 
-
+// let message = 10
 // function sms() {
 //   var message = "Hi"
 //     console.log(message)
 // }
-// sms()
+// //console.log(message)
+//  sms() 
 
 // console.log(message)
 
@@ -166,18 +184,31 @@
 
 
 // function count(){
-//     for(var i = 5; i <= 10 ; i++){
-//         var j = i*10;
+//     for(let i = 5; i < 10 ; i++){
+//         let j = i*10;
 //     }
 //      console.log(i);
-//      console.log(j)
+//      console.log(j);
 // }
 
-// count();
+//   count();
 
 
+// ուղղանկյան կողմերի երկարությունը բնական թվեր են։
+//գտնել ուղղանկյան կողմերի այն արժեքները, որոնց դեպքում
+//մակերեսը հավասար է պարագծին։
+// a*b = 2(a + b) 
 
+// for(let a = 4; a < 10000; a++){
+//   for(let b = 1 ; b < 10000 ; b++){
+//     if(a * b === 2 * (a + b)){
+//       console.log(`a = ${a} , b = ${b}`);
+      
+//     }
+//   }
+// }
 
+//!=============================================================
 
 // read code 
 
@@ -190,7 +221,7 @@
           
 //             continue;
 //         }
-//         s += i ;
+//         s += i ; // s = s + i
 //     }
     
 //      return s;
@@ -201,26 +232,27 @@
 
 //!Global and local Variables
 
-//  var x = 100 ; 
+ //var x = 100 ; 
 
 // function func1(){
-//     let x = 13
+//     //let x = 13
 //     function func2(){
-//         //let x = 12
+//         let x = 12
 //         console.log(x)
 //     }
 //     func2();
 // }
-
+// console.log(x)
 // func1()
 
 
+
 // function fibonacci(n){
-//     let fib1 = 0;
+//     let fib1 = 1;
 // let fib2 = 1;
 // let nextFib;
 
-// for(let i =0; i <= n ; i++){
+// for(let i =0; i < n ; i++){
 //     console.log(fib1)
 //     nextFib = fib1 + fib2;
 //     fib1 = fib2;
@@ -228,7 +260,7 @@
     
 // }
 // }
-// console.log(fib1)
+// //console.log(fib1)
 // fibonacci(5)
 
 
@@ -243,8 +275,9 @@
 //     console.log(name)
     
 // }
-// sms();
-//  console.log(user);// petros
+
+//  //sms();
+//   console.log(user);// 
 //  console.log(name) // my name is poghos // karen 
 
 
@@ -255,7 +288,7 @@
 // var i = 20;
 
 // do {
-//     i +=s;
+//     i +=s; // i = i + s
 //     console.log(i)
 // } while (i < 20);
 
@@ -266,19 +299,20 @@
 
 //! Տեսանելության տիրույթ ։ 
 
+
 // var x = "XX";
 // var y = "YY";
 // function tiruyt(){
    
-//     console.log(x); // XX 
+//     console.log(x); // 
 //     x = "x";
-//     console.log(y);  // udef
+//     console.log(y);  // 
 //     var y = "y";
 // }
 
-// tiruyt();
-// console.log(x);
-// console.log(y);
+ //tiruyt();
+//  console.log(x);
+//  console.log(y);
 
 
 
@@ -293,37 +327,39 @@
 //         console.log(y)
 //     }
 // }
-//aaa(5);
-//aaa();
-//aaa("");
- //aaa(undefined);
-//aaa(false);
+
+// //aaa(5);
+// //aaa();
+// //aaa("");
+//  //aaa(undefined);
+// aaa(false);
 
 
-//  console.log(typeof function(){} )
+  //console.log(typeof function(){} )
 
 
 
 //  var x = "X";
 //  var y = "Y";
+
 //  function tiruyt(){
-//     console.log(x) 
+//     console.log(x)   // "X"
 //     x = "Poghos";
-//     y = "yx";
-//     console.log(y); 
+//      y = "yx";
+//     console.log(y);  //"yx"
     
 //             function nerqin(z){
-//                 console.log(x); 
-//                 console.log(y); 
+//                 console.log(x); //poghos
+//                 console.log(y); // undef
 //                  var y = " _y";
-//                 console.log(z) 
+//                 console.log(z)  // z
 //             }
 //             nerqin("z")
 //  }
 
-//  tiruyt();
-//  console.log(x); 
-//  console.log(y);
+//   tiruyt();
+//   console.log(x); 
+//   console.log(y);
 
 
 // return function 
@@ -338,12 +374,12 @@
 // }
 
 
-//  var z = func();
-// //console.log(z)
+// //   var z = func();
+// //   // console.log(z)
 
-//  //z("hello")
+// //  z("hello")
 
-//  func()("45")
+//   func()("45")
 
 
 
@@ -356,19 +392,18 @@
 //     }
 // }
 
-//  var h = say("hello");
-//  console.log(h)
+//   var h = say("hello");
+//   //console.log(h)
 
-//   console.log(h("students"))
+//    console.log(h("students"))
 
 
 //! ES6 let, var , const
 
 
-
 // if(true){
 //     //1.
-//     const x = 10;
+//     //const x = 10;
 //     //2. 
 //     //let x = 1;
 
@@ -387,7 +422,7 @@
 //     console.log(i)
 // }
 
-//  console.log(i)
+//   console.log(i)
 
 //var
 
@@ -395,21 +430,21 @@
 //     console.log(i)
 // }
 
-//  console.log(i)
+//   console.log(i)
 
 
-//  var x = 22;
+//   var x = 22;
 
 
 // if("a"){
 //     //var
 //     var x = 11;
-//     console.log(x); // 22 ; 
-    
+//     console.log(x); 
+   
 
 // }
 
-// console.log(x) // 
+//  console.log(x) // 
 
 
 
@@ -432,7 +467,7 @@
 // x = "hello";
 // x = 150;
 // console.log(x)
-// var x;
+// let x;
 
 
 
@@ -456,8 +491,10 @@
 //     console.log(t)
 // }
 
-// sum()
+//  sum()
 
+
+//!==========================================================
 
 //! in ES6 we can creat function with default value
 
@@ -473,11 +510,12 @@
 //     console.log("Barev," + name)
 // }
 
-//hello();
-//hello(undefined);
-//hello(null);
+// //hello();
+// //hello(undefined);
+// //hello(null);
 // hello(false);
-//hello(0)
+// hello(0)
+// hello("")
 
 
 
@@ -486,15 +524,9 @@
 // function outer(){
 //     console.log(x);
 // }
-// var x = "Hello";
+// let x = "Hello";
 
-// outer();
-
-// var outer = function(){
-//     console.log(x)
-// }
-// var x = "hello";
-
+//outer();
 
 
 //!замыкание функции // Closure
@@ -503,22 +535,20 @@
 
 
 // function counter(count = 0){
-    
-     
-//     return function(){
+//    return function(){
 //         console.log(++count)
 //     }
 // }
 
 // //1.
- //let hashvich = counter();
-   //console.log(hashvich);
-//  hashvich();
-//  hashvich();
-//  hashvich();
+//  let hashvich = counter();
+//    //console.log(hashvich);
+//   hashvich();
+//   hashvich();
+//   hashvich();
 
-// //2.
-//  let hashvich1 = counter(10);
+// // //2.
+//  let hashvich1 = counter();
 //  hashvich1();
 //  hashvich1();
 
@@ -531,8 +561,8 @@
 //     }
 // }
 
-//  let hashvich = counter(1, 100);
-//  let hashvoch1 = counter(2, 200);
+//   let hashvich = counter(1,100);
+//   let hashvoch1 = counter(2, 200);
 
 //  hashvich();
 //  hashvich();
@@ -550,9 +580,9 @@
 // let hashvich1 = counter("Two");
 
 //  hashvich();
-//  hashvich1();
-// hashvich();
-//  hashvich1();
+//  hashvich();
+//   hashvich1();
+//   hashvich1();
 
 
 // function creatElement(name){
@@ -562,13 +592,13 @@
 //     }
 // }
 
-//  let march = creatElement("March");
+//   let march = creatElement("March");
 
-//  let april = creatElement("April")
+//   let april = creatElement("April")
 
-//  march();
-//  march();
-//  march();
+//   march();
+//   march();
+//   march();
 //  april();
 //  april();
 //  april();
@@ -581,25 +611,25 @@
 
 //  foo();
 //  foo();
-//  count = 0;
+//   count = 0;
 //  foo();
 //  foo();
-//  console.log(count)
+//   console.log(count)
 
 
 //Example
 
-// var sum = 0;
+// var sum = 0; 
 // function add(count){
 //    sum += count; //sum = sum +count
 
 //    return sum
 // }
 
-//  add(2);
-//  add(4);
-//  add(6);
-//  console.log(sum)
+//   add(2);
+//   add(4);
+//   add(6);
+//   console.log(sum)
 
 
 // var x = 10;
@@ -610,9 +640,9 @@
 //     return nerqin;
 // }
 
-//artaqin()()
+// artaqin()()
 
-//  let y = artaqin()
+//   let y = artaqin()
 // // //console.log(y)
 //  y();
 //  y();
@@ -644,9 +674,12 @@
 // }
 // say("hayer");
 
-// let say = (x)=>{
-//     console.log(`Barev ${x}`)
+// let say = (x)=> {
+//   console.log(`Barev ${x}`)
+//   console.log("asd")
 // }
+    
+
 //  say("hayer")
 
 
@@ -668,15 +701,14 @@
 //     console.log(x * y + z)
 // }
 
-//  sum(4,5,6)
+//   sum(4,5,6)
 
 // if we use return
 
 // let sum1 = (x, y ,z) =>{
 //     return x*y*z
 // }
-
-//  console.log(sum1(4,5,6))
+//   console.log(sum1(4,5,6))
 
 // let sum2 = (x,y,z)=> x*y*z;
 // console.log(sum2(4,5,6))
@@ -685,15 +717,15 @@
 //! ======================= CallBack Function ===================================
 
 // function arajin(){
-//     console.log("I am a first")
+//     console.log("I am the first")
 // }
 
 // function erkrord(){
-//     console.log("I am a second")
+//     console.log("I am the second")
 // }
 
 //  arajin();
-//  erkrord()
+//  erkrord();
 
 
 
@@ -710,7 +742,7 @@
 //     console.log(`I am a second`)
 // }
 
-//  arajin(erkrord)
+//   arajin(erkrord)
 
 
 // function arajin(y){
@@ -724,8 +756,8 @@
 
 //arajin(erkrord); // ....?
 //arajin(erkrord(4 , 5))
- //arajin(function(){return erkrord(5,5)})
- //arajin(()=>erkrord(4,5))  // ES6, Arrow function
+//  arajin(function(){return erkrord(5,5)})
+//  arajin(()=>erkrord(4,5))  // ES6, Arrow function
 
 
 

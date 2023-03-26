@@ -9,17 +9,17 @@
 
 //Create not empty array
 
-//  let user1 = [15,"Armen",true , 25];
+// let user1 = [15,"Armen",true , 25];
 
-// //console.log(user1[0])
+//console.log(user1[0])
 
-//  user1[8] = "Karen";
-//  //console.log(user1[8])
+//   user1[8] = "Karen";
+//  console.log(user1)
 
 //   console.log(user1);
 
-//   user1[1] = "Poghos";
-//   console.log(user1)
+  //  user1[1] = "Poghos";
+  //  console.log(user1)
 
 //! Էլեմենտները կամ կանստրուկցիաները կոչվում են օբյեկտներ, 
 //!եթե նրանք ունեն առնվազն մեկ ստատիկ հատկություն և առնվազն մեկ մեթոդ:
@@ -28,32 +28,32 @@
 
 
 
-  //let user1 = [15,"Armen",true,25];
+//   let user1 = [15,"Armen",true,25];
 
-// // // console.log(user1);
+//  console.log(user1);
 
-//   user1.length = 100;
-//   console.log(user1);
+//    user1.length = 100;
+//    console.log(user1);
 
-//   user1[78] = "Poxos"
-//   console.log(user1);
+//    user1[78] = "Poxos"
+//    console.log(user1);
 
 //  user1[99] = "abc";
 // console.log(user1);
 
-//   delete user1[1];
-//  console.log(user1.length);
-//  console.log(user1);
+//     delete user1[1];
+//     console.log(user1.length);
+//   console.log(user1);
 
-//  user1.length = 3
-//  console.log(user1)
+//   user1.length = 3 ; 
+//   console.log(user1);
 
 
 //for in array
 
-//  let array1 = ["a","b","c",undefined];
-//  array1[5] = "X";
-// console.log(array1);
+//   let array1 = ["a","b","c",undefined];
+//   array1[5] = "X";
+//  console.log(array1);
 
 // for(let i = 0; i < array1.length; i++){
 //     console.log(i + ": " + array1[i])
@@ -71,31 +71,32 @@
 
 //Methods of Array's
 
-//let arr1 = [1,12,122,"a",false,"b"]
-//console.log(arr1)
+// let arr1 = [1,12,122,"a",false,"b"]
+// console.log(arr1)
 // let a = []
-// let b = a
+// let b = []
 //  console.log(a===b)
 
-// let arr2 = arr1.toString();
-//  console.log(arr2)
+  //let arr2 = arr1.toString();
+//   console.log(arr2)
 
-// let arr2 = arr1.join(",")
+ //let arr2 = arr1.join(":")
 // console.log(arr2)
 
 // let a = [1 ,15];
 // let b = [2 , 15,6];
 
-// let arr = a.concat(b);
+// let arr = b.concat(a);
 // console.log(arr);
 
 
-//  let c = [1,2,3,4,5,6,7,8,9,10,11];
-// console.log(c);
+//   let c = [1,2,3,4,5,6,7,8,9,10,11];
+//  console.log(c);
 
-// let d = c.splice(6)
+// let d = c.splice(6,3)
 // console.log(d)
 // console.log(c)
+
 
 // let z = c.slice(2,5); //[a,b)
 // console.log(z)
@@ -111,12 +112,13 @@
 // console.log(d);
 // let f = d.reverse();
 // console.log(f);
-// console.log()
+// console.log(d);
 
 // let d = [1,11,15,255,31,40,52,6,29,36,112,521];
-// console.log(d);
-// let f = d.sort(function(a,b){return b-a});
-//  console.log(f); //sort as strings
+// console.log(d)
+// //console.log(d.sort());
+// let f = d.sort(function(a,b){return a-b});
+//   console.log(f); //sort as strings
 
 // //if we want sort as NUMBERS
 // function mysort(a,b){return a - b}
@@ -134,10 +136,19 @@
 // Գրել ծրագիր, որը կգտնի տրված թվային զանգվածի մեծագույն արժեքը։
 // let d = [15,255,31,40,52,6,734,29,36,112,521];
 
+// let f = d.sort();
+// console.log(`min is ${f[0]} : max is ${f[f.length - 1]}`)
+
+
+
+
 // d.sort((a,b)=>a-b)
 
 // console.log(`max  ${d[d.length - 1]}`)
 // console.log(`min ${d[0]}`)
+
+//=============================================
+
 
 
 //!pop,push,shift,unshift
@@ -146,7 +157,7 @@
 // console.log(a);
 // let v = a.pop();
 // console.log(v);
-// console.log(a)
+// console.log(a);
 
 
 // let a = [15,"abc",71,true];
@@ -177,11 +188,11 @@
 
 
 
-//  let a = [5,"abc",71,"def",150,25,false,"hello"];
-//  console.log(a);
-// let b = a.splice(2,3);
-// console.log(b);
-// console.log(a)
+//   let a = [5,"abc",71,"def",150,25,false,"hello"];
+//   console.log(a);
+// // let b = a.splice(2,3);
+// // console.log(b);
+// // console.log(a)
 
 
 
@@ -202,11 +213,11 @@
 // let a = Math.PI;
 // console.log(a);
 
-// console.log(Math.pow(2,4));
- //console.log(2**4)
- //console.log(Math.sqrt(16))
-//  let b = Math.cbrt(-27);
-//  console.log(b);
+//  console.log(Math.pow(2,4));
+//  console.log(2**4)
+//  console.log(Math.sqrt(16))
+//   let b = Math.cbrt(-27);
+//   console.log(b);
 
 
 //!ClassWork
@@ -214,10 +225,9 @@
 // let a = [2,3,4,5];
 // let b = [];
 
-
 //console.log(b) -> [4,9,16,25]
 
-//===============================================================
+
 
 // function func(){
 //     let a = [];
@@ -229,15 +239,15 @@
 
 //  let x = func();
 //  console.log(x);
-//  x[0]();
-//  x[1]();
-//  x[2]();
+//   x[0]();
+//   x[1]();
+//   x[2]();
 
 
 //!forEach
 
 // let num = [1,2,3,4];
-// num.forEach((x)=>console.log( x*10));
+// num.forEach((a)=>console.log( a*10));
 
 
 
@@ -254,7 +264,8 @@
 // let res = num.map(function(v){
 //     return v*v
 // });
-// console.log(res)
+// console.log(res);
+// console.log(num);
 
 
  //  let arr = [1,2,3,4,5,6];
@@ -280,7 +291,7 @@
 
 // let arr = [1,2,3,4,5,6];
 // let d = arr.filter(function(val){
-//     return val < 5
+//     return val >= 5
 // })
 // console.log(arr)
 // console.log(d)
@@ -338,8 +349,14 @@
 
 //! Խնդիր 1․ 
 //!Տրված զանգվածից ստանալ թվային զանգված , որից հետո այդ զանգվածից հեռացնել
-//!բոլոր բացասական թվերը, այնուհետ սրտավորել։
+//!բոլոր բացասական թվերը, այնուհետ սորտավորել։
 //!Օգտվել parsFloat() և sort() ֆունկցիաներից։
+
+
+// let arr = [-4,5,-1,4,5,6,7]
+// let arr1 = []
+
+
 
 //let arr = ["25em","18pt","50px","-15px","-25em","65px"];
 
@@ -365,6 +382,9 @@
 //օրինակ՝ [3,-1] => [-1, 0 , 1 , 2, 3]
 // [-2,6] => [-2,-1,0,1,2,3,4,5,6]
 
+
+
+
 // let arr = [];
 // for(let i = 3 ; i >= -1 ; i--){
 //   arr.push(i)
@@ -372,4 +392,11 @@
 // console.log(arr)
 
 
+//
+// console.log([0] == 0)
+// console.log([7] == 7)
+// console.log([false] == 0)
+// console.log([null] == 0)
+// console.log([""] == 0)
+// console.log([undefined] == 0)
 

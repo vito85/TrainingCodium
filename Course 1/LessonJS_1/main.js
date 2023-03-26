@@ -1,6 +1,8 @@
+
+
 //! Պայմանի օպերատոր if / else ;
 
-// if(7 < 4) {
+// if(7 > 4) {
 //     console.log("barev")
 //     console.log("Armen")
 // } else  {
@@ -10,14 +12,18 @@
 
 
 
-// var age = 3 ; 
+// var age = 99 ; 
 
-// if( age > 18 && age < 63) {
-//     console.log("Chapahas");
+// if(age < 18){
+//     console.log("anchapahas")
+// }else if(age >18 && age < 63){
+//     console.log("Ashxatox")
+// }else {
+//     console.log("toshakaru")
 // }
-//      else if(age == 30 ) {
-//         console.log("Anchapahas")
-//     }
+
+
+// let age = 5;
 
 // if(age == 4) {
 //     console.log("my age is " + age)
@@ -28,7 +34,7 @@
 
 
 
-// var book = "math";
+// var book = "math ";
 
 // if(book == "Economics"){
 //     console.log("Economics book")
@@ -66,23 +72,39 @@
 // }
 
 
-//  console.log("Hello")
+//   console.log("Hello")
 
-// let x = 10;
+
+
+// let x = 0;
 // do {
 //     console.log("barev")
 //     x = x+1
-// } while (x < 8);
+// } while (x <= 10);
 
 
 
 
 
-//? Գտնել 1-100 գումարը ։ 
+//? Գտնել 1-169 գումարը ։ 
+
+// var sum = 0;
+// for(let i = 1; i <=100; i ++){
+//     sum = sum + i ;
+// }
+
+// console.log(sum)
+
+
 
 
 //? Ցիկլի օգնությամբ հաշվել 2-ի 10 աստիճանը ։ 
 
+// let sum = 1 ; 
+// for(let i = 1 ; i <=32;i++){
+//     sum = sum * 2
+// }
+// console.log(sum)
 
 
 // Հետպայմանով ցիկլ
@@ -127,16 +149,13 @@
 
 
 
-
-
-
-
-
-
-
 //? Դուրս բերել 1-30 միայն զույգ թվերը։
 
-
+// for(let i = 1 ; i <= 300; i++){
+//     if(i % 3 ===0 && i % 7 === 0){
+//         console.log(i)
+//     }
+// }
 
 
 
@@ -158,14 +177,14 @@
 
 
 
-// let x = 50;
+//let x = 50;
 
-// for(var i = 0; i <=10 ; i++) {
-//     if(i == 5 || i == 8) {
-//         continue;
+// for(var i = 0; i <=100 ; i++) {
+//     if(i == 5 || i == 8 || i == 50 || i== 100) {
+//         console.log(i)
 //     }
 //    //let y = x + 10
-//     console.log(i)
+    
 //     //console.log(y)
 // }
 
@@ -175,9 +194,9 @@
 
 // var k = "";
 
-// for(var i = 0; i < 100 ; i++){
-//     if(i == 5){
-//         continue;
+// for(var i = 0; i < 10 ; i++){
+//     if(i == 9 || i == 7 ){
+//         break;
 //     }
 //     k = k + "\n number is " + i;  
 // }
@@ -189,11 +208,25 @@
 //?  Ցիկլի միջոցով հաշվել 1-1000 թվերի շարքում բոլոր այն թվերի ՔԱՆԱԿԸ որոնք,
 //? բաժանվում են  17 ի
 
+// let count = 0;
+// for(let i = 17; i <=1000; i++){
+//     if(i % 17 === 0){
+//         count = count + 1 // count++
+//     }
+// }
+
+// console.log(count)
+
 
 //? Ցիկլի միջոցով 1-50 թվերի շարքում դուրս բերել բոլոր թվերը, բացի 
  //? նրանցից որոնք բաժանվում են 19 ի։
 
 
+// for(let i = 1 ; i <=50 ; i++){
+//     if( !(i % 19 === 0 )){
+//         console.log(i)
+//     }
+// }
 
 
 
@@ -204,6 +237,9 @@
 
 
 //? 1-1000 թվերի շարքում դուրս բերել 7 -ի վրա բաժանվող 123-րդ թիվը:
+
+
+
 
 // let count = 0;
 // for( var i = 7 ; i <=1000;i = i + 7){
@@ -222,15 +258,6 @@
 // var x = 10
 
 // //? if i ==0
-
-
-
-
-
-
-
-
-
 
 
 
@@ -276,17 +303,17 @@
 
 //? Հաշվել 6-ի ֆակտորիալը։
 
-// let res = 1 ;
-// let n = 0 
-// for(let i =1 ; i <= n; i++){
-//     res = res * i;
+// let x = 9 ; 
+// let fact = 1;
+
+// for(let i = 1; i<=x;i++){
+//     fact = i*fact
 // }
-// console.log(res)
+// console.log(fact)
+
 
 
 //! Ներդրված ցիկլեր
-
-
 
 
 //  artaqin:
@@ -295,9 +322,9 @@
 
 //         nerqin:
 //             for(var j = 0; j < 7; j++) {
-//                  if(j > 5) continue;
-//                 //  if(i == 3) break nerqin;
-//                 // if(i == 5 ) break artaqin;
+//                 // if(j > 5) continue;
+//                  // if(i == 3) break nerqin;
+//                  if(i == 5 ) break artaqin;
 //                 console.log("Nerqin cikl " + j)
 //             }
 //     }
@@ -309,13 +336,7 @@
 
 
 
-
-
-
-
     //? 1-101 թվերի շարքում դուևս բոլոր պարզ թվերը։
-
-
 
 
 
@@ -347,13 +368,13 @@
     
     
     
-    //  let n = 101;
+    //   let n = 101;
     
 
     // simploop:
     // for(let i = 2; i <= n ; i++) {
 
-    //     for(let j = 2 ; j < i ; j++){
+    //     for(let j = 2 ; j < i/2 ; j++){
     //         if(i % j == 0) {
                 
     //             continue simploop}
@@ -362,8 +383,10 @@
     //     console.log(i)
     // }
 
+
+
     
-// let n = 10 ;
+// let n = 101 ;
 
 // loop:
 // for(let i = 2; i <=n ; i++){
@@ -378,58 +401,39 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //todoo:// function declaration && expression
 
 // declaration
+ 
 
-
-//     function hello(){
-//         console.log("barevner")
-//     }
+    // function hello(){
+      
+    //     console.log("barevner")
+    // }
 
 //  hello();
-
-
+// console.log(typeof hello)
 
 // expression
 
-
+    
 //    var x =  function (){
 //         console.log("barevner")
 //     };
 
-//     x();
 
 
 
 //function argumnet
 
 // function poghos(age){
-//     // age = age || "agumnet missed"
-
+//      //age = age || "agumnet missed"
+   
 //     console.log("I am a " + age + " years old")
 // }
 
-// poghos(30);
-// poghos();
+//  poghos(30);
+//  poghos();
 
 
 
@@ -441,20 +445,20 @@
 
 
 
-// function hello(name,age){
-//     // name = name || "AAA";
+// function hello(name = "gugo",age){
+//      name = name || "AAA";
 //     // age = age || 100;
 //     console.log("My name is " + name + 
 //     " and I am a " + age + " years old")
 // }
 
-// // hello("Armen" , 15);
+//  hello("Armen", 15);
 
-// //  hello();
+//  hello("Armen");
 
-// hello(null , 55)
+//   hello(false , 55)
 
-
+//============================================================
 
 //return
 
@@ -496,7 +500,6 @@
 
 
 
-
 // local variables 
 
 
@@ -523,3 +526,8 @@
 // }
 
 // count();
+
+
+
+
+  

@@ -9,7 +9,7 @@
 //     }
 //     sum +=i; //sum = sum + i
 // }
-// console.log(sum);
+// console.log(sum);  // 
 
 
 
@@ -27,13 +27,13 @@
 
 // let sum = 0;
 // for(let i = 0; i < 3; i++){
-//     sum +=i;
-//     if(i == 2){
+//     sum +=i; // sum = sum + i
+//       if(i == 2){
 //         break;
 //     }
     
 // }
-// console.log(sum);
+// console.log(sum);  //
 
 
 
@@ -45,6 +45,7 @@
 // function divide(a , b){
 //     let res = a * b;
 //     return;
+  
 // }
 // console.log(divide(4 , 5));
 
@@ -68,6 +69,7 @@
 
 // function sayHi(){
 //     let hello = "Barev";
+    
 // }
 // let res = sayHi();
 // console.log(res);    // ...?
@@ -101,7 +103,7 @@
 
 
 // let hello = function(){};
-// console.log(typeof hello)
+// console.log(typeof hello);
 
 
 
@@ -131,7 +133,7 @@
 
 // x = 50;
 // console.log(x);
-// var x;
+// let x;
 
 
 //13.
@@ -154,7 +156,7 @@
 
 
 // foo();
-// let x = "Hello Students";
+// var x = "Hello Students";
 // function foo(){
     
 //     console.log(x)
@@ -182,7 +184,7 @@
 //     console.log(x)
 // }
 
-// funk1();
+// funk1();  
 
 //18.
 
@@ -212,8 +214,8 @@
 
 
 //20.
-                         
- //console.log("Barev" && (undefined || 100) && "hello" || (null || 65))
+//  console.log("Barev" && (undefined || 100) && "hello" || (null || 65))
+
 
 
 //21.
@@ -223,7 +225,7 @@
 
 //22.
 
-// console.log("AAAA"- "BBBB");   //....?
+//  console.log("AAAA"- "BBBB");   //....?
 
 
 //23.
@@ -231,8 +233,9 @@
 //console.log(!!! null);
 
 //  console.log("500" - "100")
-// console.log(typeof NaN)
+//console.log(typeof NaN)
 
+//!==============================================================
 //24.
 
 
@@ -246,7 +249,7 @@
 
 //25.
 
-// console.log(f())
+//console.log(f())
 
 // function f(){
 //     return 23;
@@ -255,7 +258,7 @@
 // let f = function(){
 //     return 100;
 // }
-// console.log(f())
+//  console.log(f())
 
 
 
@@ -263,8 +266,6 @@
 
 // var y = 1 , x = y = typeof x;
 // console.log(x)
-
-
 
 // var y = 1;
 // var x;
@@ -298,5 +299,74 @@
 // console.log(++number);
 // console.log(number);
 
+  //29.
+  // let x = 1;
+  // const y = 2;
+
+  // if(true){
+  //   let x = 3;
+  //   const y = 4;
+  //   console.log(x);
+  //   console.log(y)
+  // }
+  // console.log(x);
+  // console.log(y);
+
+//30.
+ //console.log(undefined == null);  // ...?
+// console.log(undefined == 0);     // ...?
+// console.log(null == 0);         // ...?
+// console.log(undefined + null)   // ...?
+
+//31.
+// const a = 5;
+// const b = "";
+// console.log(!!(a || b || c || d))
+
+//32.
+// for(var i = 0; i < 5; i++){};
+// console.log(i)
+
+//33.
+// console.log("b" + "a" + +"n" + "a")
+// console.log("10"/"2")
+
+//34.
+// let n = 0;
+// console.log(n++)
+// console.log(++n);
+// console.log(n)
+
+// 35
+// var a = 5;
+// function f(){
+//   if(a){
+//     console.log(a);
+//     var a = 10
+//   }
+// }
+// f();
+
+
+// 36
+// let a = "3";
+// +a--
+// console.log(a)
+
+
+//37
+// console.log(NaN === NaN);
+// console.log(null == null);
+// console.log(undefined == undefined);
   
+
+//38
+// console.log(typeof undefined);
+// console.log(typeof null);
+// console.log(typeof NaN);
+// console.log(typeof Codium);
+// console.log(typeof (typeof null));
+
+
+
 
