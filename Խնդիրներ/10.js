@@ -6,7 +6,7 @@
 
 
 
-let arr = ["a", "e", "i", "o", "u"]; 
+//let arr = ["a", "e", "i", "o", "u"]; 
 
 // function getVowelsCount(str){
 //     let count = 0;
