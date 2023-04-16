@@ -112,21 +112,22 @@
 
 // const nums = [54,98,65,45,67];
 
-// let[one,two,three] = nums;
-// let max = Math.max(one,two,three);
-// console.log(max)
-//console.log(one, two , three)
+//  let[one,two,three] = nums;
+//  let max = Math.max(one,two,three);
+//  console.log(max)
+//  console.log(one, two , three)
 
 //spred operator ES6
 
 // const arr = [15,2,4,53,54,28,25,78,0,56,33];
 // let arr1 = [...arr];
-// // arr1[2] = "Armen"
+//  //arr1[2] = "Armen"
 
-// // console.log(arr[1] === arr1[1])
-// // console.log(arr1)
-// let max = Math.max(...arr)
-// console.log(max)
+//  console.log(arr[1] === arr1[1])
+//  console.log(arr1)
+//  let max = Math.max(...arr)
+//  console.log(max)
+
 
 
 
@@ -143,7 +144,7 @@
 
 // console.log(arr);
 // let max = Math.max(...arr);
-// console.log(`Maximum valye is ${max}`)
+// console.log(`Maximum valye is ${max}`);
 
 
 //Power and Sqrt functions
@@ -163,9 +164,15 @@
 // console.log(Math.SQRT2)
 
 
+
+
 //! գրել ֆունկցիա, որը ստանում է որպես արգումենտ շրջանագծի շառավիղ R
 //! և վերադարձնում է շրջանի մակերեսը և շրջանագծի երկարությունը։
 //! Արտահայտել ամբողջ թվով, կլորացնել դեպի ներքև։
+
+//R
+//S = pi*(r**2)
+//L = 2*pi*r
 
 
 // function circle(r){
@@ -174,12 +181,9 @@
 //     return `s = ${Math.floor(s)} , l = ${Math.floor(l)}`
 // }
 
-// console.log(circle(3))
+// console.log(circle(4))
 
 
-//R
-//S = pi*(r**2)
-//L = 2*pi*r
 
 
 //Գտնել ֆունկցիա որը ստանում է, որպես պարամետր իրարից պրաբոլով առանձնացված ստրինգ 
@@ -187,10 +191,12 @@
 //և փոխարինել այդ բառի սինվոլների քանակի ասղանիշներով։
 
 
-// let str = "barev armen vonc es narek gegham "
-// let arr =  ["armen" ]
+// let str = "barev armen vonc es "
+// let arr =  ["armen", ]
 
 // "barev  ***** vonc es"
+
+
 
 
 
@@ -203,15 +209,15 @@
 //     return str1;
 // }
 
-// console.log(changStr("artak"))
+// console.log(changStr("artakqwe"))
 
 
 
 
 // let str = "barev dzez narek es Hay em narek" ;
-// let aray = ["narek","es","barev","narek"];
+// let aray = ["narek","barev"];
 
-// let obj = {}
+//  let obj = {};
 
 
 // for(let i = 0; i< aray.length; i++){
@@ -222,31 +228,34 @@
 //     }
 // }
 
-// console.log(obj)
+//  console.log(obj)
 
-// let arr = str.split(" ")
-//  console.log(arr)
+
+
+//  let arr = str.split(" ")
+//   console.log(arr)
+
+
 
 // for(let i = 0; i < arr.length; i++){
 //     if(obj[arr[i]]){
 //         arr[i] = changStr(arr[i])
 //     }
 // }
-//  console.log(arr)
-//  console.log(arr.join(" "))
+//   console.log(arr)
+//   console.log(arr.join(" "))
 
 
 
+//   const obj1 = {a:1,b:2,c:3,k:{d:4,e:5}}
+//  const obj2 = structuredClone(obj1)
 
-
-//  const obj1 = {a:1,b:2,c:3,k:{d:4,e:5}}
-// const obj2 = structuredClone(obj1)
-
-//   const obj3 = {...obj1}
-
-
-//    obj1.k.d = 10
+  //const obj3 = {...obj1}
 //   console.log(obj1)
+// console.log(obj3)
+
+//     obj2.k.d = 10
+//    console.log(obj1)
 //   console.log(obj2)
 //  console.log(obj2.k.d, obj3.k.d)
 

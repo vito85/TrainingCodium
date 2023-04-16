@@ -363,12 +363,24 @@
 // }
 
 //41
-// var x;
-// console.log(typeof undefined === "undefined");
+//var x;
+//console.log(typeof undefined === "undefined");
 
 
+//42
+// let x = 0;
+// let y = 2;
+// let z = ++x && y++
+// console.log(z)
+// console.log(y)
 
-
+//43
+// var x = 10
+// function count(n){
+//     console.log(n)
+// }
+// count(x++);
+// count(++x)
 
 
 
@@ -381,3 +393,22 @@
 // }
 // a()
 // console.log(typeof b )
+
+
+// const a = {
+//   b : false , 
+//   toString() {
+//       if (this.b) {
+//           return false ; 
+//       }
+//       this.b = true ;
+//       return true ; 
+//   }
+// }
+
+
+//  console.log(a== true && a == false )
+
+
+
+

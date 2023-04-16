@@ -6,6 +6,7 @@
 //evant loop հերթագրման տեղ, որը աշխատում է այն պահին երբ, որ 
 //call stek - ը դատարկվում է ։
 
+
 //shablon User
 //  function User(name,position){
 //     this.name = name;
@@ -14,14 +15,18 @@
 //         return this.position
 //     }
 // }
+
 // let obj1 = new User("Aram","Snaiper");
 // let obj2 = new User("Narek" , "Hradzig");
-//  console.log(obj1);
+//   console.log(obj1.toString());
 //  console.log(obj2.info());
- //console.log(obj1.__proto__ === User.prototype)
-// console.log(Object.prototype)
-// console.log(Array.prototype)
-// console.log(User.prototype)
+
+//console.log(obj1.__proto__ === User.prototype)
+// console.log(Object.prototype);
+// console.log(Array.prototype);
+// console.log(User.prototype);
+
+
 
 // let obj = {
 //     name:"Aram",
@@ -29,9 +34,10 @@
 //         return this.name
 //     }
 // }
-// getinfo մոթդը կոչվում է obj օբյեկտի սեփական մեթոդ
+// //getinfo մոթդը կոչվում է obj օբյեկտի սեփական մեթոդ
 // console.log(obj.getinfo());
 // console.log(obj.toString())  //toString is method from object prototype ....???
+
 
 
 //! Functional Inheritance
@@ -47,8 +53,8 @@
 //  let user = new User("NetAdmin",true)
 //  console.log(user)
 
-//1
-//console.log(user.constructor)
+// //1
+// console.log(user.constructor)
 
 //1.2
 // function Admin(position,status){
@@ -58,6 +64,7 @@
 //         console.log(`position is ${this.position}, 
 //         status is ${this.status}`)
 //     }
+
 // }
 
 // let admin = new Admin("SysAdmin", false)
@@ -65,22 +72,22 @@
 
 //1.2.1
 // console.log(user.position);
-// console.log(admin.position)
+ //console.log(admin.position)
 
 //2. in this case help us functional inheritance
 
 //parent
-// function User(position, status){
-//    // 2.
-//     let t = "Programmer"; // incapsulation
+function User(position, status){
+   // 2.
+    let t = "Programmer"; // incapsulation
 
-//     this.position = position;
-//     this.status = status;
-//     this.getFulInfo = function(){
-//         console.log(`position is ${this.position}, 
-//         status is ${this.status}`)
-//     }
-// }
+    this.position = position;
+    this.status = status;
+    this.getFulInfo = function(){
+        console.log(`position is ${this.position}, 
+        status is ${this.status}`)
+    }
+}
 
 
 //child
@@ -104,16 +111,16 @@
 //     }
 //  }
 
-//  let user = new User("NetAdmin", true);
-//  let admin = new Admin("SisAdmin", false);
+//   let user = new User("NetAdmin", true);
+//   let admin = new Admin("SisAdmin", false);
 
-// //  console.log(user);
-// //  console.log(admin);
-// //admin.a();
-// //console.log(user.a());
+//   console.log(user);
+//   console.log(admin);
+// admin.a();
+// console.log(user.a());
 
-//  admin.test(); // test function => Admin
-//  admin.getFulInfo()
+//   admin.test(); // test function => Admin
+//   admin.getFulInfo()
 
 //!============================================================
 //===================== Prototype Inhersitance =================
@@ -127,19 +134,19 @@
 //     }
 // }
 
-// let user1 = new User("Poghos", "Poghosyan");
-// let user2 = new User("Petros","Petrosyan");
-//  console.log(user1);
-// console.log(user2);
+//  let user1 = new User("Poghos", "Poghosyan");
+//  let user2 = new User("Petros","Petrosyan");
+//   console.log(user1);
+//  console.log(user2);
 
-//1.
-// user1.getInfo();
-// user2.getInfo();
+// // //1.
+// // user1.getInfo();
+// // user2.getInfo();
 
-//1.1 we can redefined method "getInfo" for user1
-//  user1.getInfo = function(){console.log("Hello Poghosyan")};
-//  user1.getInfo();
-//  user2.getInfo();
+// // //1.1 we can redefined method "getInfo" for user1
+//   user1.getInfo = function(){console.log("Hello Poghosyan")};
+//   user1.getInfo();
+//   user2.getInfo();
 
 
 
@@ -161,21 +168,21 @@
 //     console.log(`I am a ${this.name}  ${this.surname}`)
 // }
  //console.log(User.prototype)
-//  let user1 = new User("Poghos", "Poghosyan");
-//  let user2 = new User("Petros","Petrosyan");
-// user1.getInfo();
+//   let user1 = new User("Poghos", "Poghosyan");
+//   let user2 = new User("Petros","Petrosyan");
+// // user1.getInfo();
 // user2.getInfo();
 
-// console.log(User.prototype);
-// console.log(user1.__proto__);
-// console.log(user1.__proto__ === User.prototype)
+//  console.log(User.prototype);
+//  console.log(user1.__proto__);
+//  console.log(user1.__proto__ === User.prototype)
 
 //look at object user1. It has a property, "getInfo" is 
 // in prototype of user1
 //console.log(user1); 
 
 //add some methods
-// User.prototype.getTest = function(){console.log("Hello")};
+//User.prototype.getTest = function(){console.log("Hello")};
 // user1.getTest();
 // user2.getTest();
 // console.log(User.prototype);
@@ -186,6 +193,7 @@
 //Prototype accessible only in function User
 //objects have a property __proto__
 
+//!========================================================================
 
 //!Let's do prototype inharitance
 //1
@@ -195,28 +203,28 @@
 
 // }
 
-//1.1
+// //1.1
 // User.prototype.getInfo = function(){
 // console.log(`My name is  ${this.name}, and surname ${this.surname}`)
 // }
 
-// //1.2
+// // //1.2
 // function Admin(){
-//     //User.apply(this, arguments); // functional inheritance
+//     User.apply(this, arguments); // functional inheritance
 // }
 
-// prototype inheritance
-// Admin.prototype = Object.create(User.prototype);
-// // Admin.prototype = User.prototype;
-//  User.prototype.test = function(){console.log("hello")}; 
+// // prototype inheritance
+//  Admin.prototype = Object.create(User.prototype);
+//  // Admin.prototype = User.prototype;
+//   User.prototype.test = function(){console.log("hello")}; 
 
 // let user = new User("Poghos","Poghosyan");
 // let admin = new Admin("Petros","Petrosyan");
 
-//  //admin.test()
+//  admin.test()
 
-// // console.log(user);
-// // console.log(admin);
+// console.log(user);
+// console.log(admin);
 
 // user.getInfo();
 // admin.getInfo(); // ...???
@@ -233,28 +241,29 @@
 
 //     function Father(){};
 //         Father.prototype = Object.create(Grandfather.prototype);
+       
 
 //         //1.1
-//         //Father.prototype.eyecolor = "Green";
+//         Father.prototype.eyecolor = "Green";
 
 // function Son(){}
 //     Son.prototype = Object.create(Father.prototype)
-    //1.2
-    //Son.prototype.eyecolor = "Brown";
+//     //1.2
+//     Son.prototype.eyecolor = "Brown";
 
-    // let grandfather = new Grandfather();
-    // let father = new Father();
-    // let son = new Son();
+//     let grandfather = new Grandfather();
+//     let father = new Father();
+//     let son = new Son();
 
 
-    // console.log(grandfather.eyecolor);
-    // console.log(father.eyecolor);
-    // console.log(son.eyecolor);
+//     console.log(grandfather.eyecolor);
+//     console.log(father.eyecolor);
+//     console.log(son.eyecolor);
 
-    //__proto__
-    // console.log(Grandfather.prototype);
-    // console.log(grandfather.__proto__);
-    // console.log(grandfather.prototype)
+//     //__proto__
+//     console.log(Grandfather.prototype);
+//     console.log(grandfather.__proto__);
+//     console.log(grandfather.prototype)
 
 
 
@@ -263,14 +272,14 @@
 //  Grandfather.prototype.eyecolor = "Green";
 
 // function Father(){};
-//3.1
-//Father.prototype = Grandfather.prototype; //not recomended
+// //3.1
+// //Father.prototype = Grandfather.prototype; //not recomended
 
- //3.2
- //Father.prototype.eyecolor = "Blue";
+//  //3.2
+//  //Father.prototype.eyecolor = "Blue";
 
-//  Father.prototype = new Grandfather() ; // not recomended
-//  Father.prototype.eyecolor = "red"
+//  //Father.prototype = new Grandfather() ; // not recomended
+//  Father.prototype.eyecolor = "red";
 
 // let grandfather = new Grandfather();
 // let father = new Father();
@@ -361,8 +370,6 @@
 // // suzuki.getModel();
 
 
-//input - "ab2[b2[cd]3[e]]f" output - "abbcdcdeeebcdcdeeef"
-//========================================================
 
 
 // class Dog{

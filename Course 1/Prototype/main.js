@@ -2,16 +2,16 @@
 //!JS ում կետը դա այն առանցքային սինվոլն է,որը նախանշում է,որ իրենից ձախ կանգնած է 
 //! օբյեկտային տիպ։
 
-//  let x = 10;
-//  let x1 = new Number("10");
-//  let x2 = new Number("10");
-// console.log(x);
-// console.log(x1)
-//  console.log(x1 == x2);
+//   let x = 10;
+//   let x1 = new Number("10");
+//   let x2 = new Number("10");
+// // console.log(x);
+// // console.log(x1)
+//   console.log(x1 == x2);
 
- //  x1 = x1.valueOf();
+//    x1 = x1.valueOf();
 //   console.log(x1);
-//  console.log(Number.MAX_VALUE)
+// //  console.log(Number.MAX_VALUE)
 // // console.log(x1.constructor)
 
 //============================ Boolean Object ====================================
@@ -26,7 +26,7 @@
 
 //==========================   String Object ======================================
 
- //let str1 = "hello";
+//  let str1 = "hello";
 // let str2 = new String("hello")
 // console.log(str1);
 // console.log(str2);
@@ -55,16 +55,28 @@
 //ClassWork 1.
 //տտրված թվերը վերածել սիմվոլների, օգտագործելով 
 //fromCharCode մեթոդը։
-//  let code = "98 97 114 101 118" ;
-//     let arr = code.split(" ")
+
+
+
+
+//   let code = "98 97 114 101 118 " ;
+
+
+
+
+// let arr = code.split(" ")    
 //     console.log(String.fromCharCode(...arr))
-//======================================================
+//=====================================================
+
+
 
  //ClassWork 2.
  //Գտնել տրված տեքստի մեջ ություն վերջածանցով բառը և դուրս բերել։
-//  let str = "Հայաստանի լեռնաշխարհի բնությունը գեղեցիկ է";
-//  let str1 = "ություն";
-//  let arr = str.split(" ");
+//   let str = "Հայաստանի լեռնաշխարհի բնությունը գեղեցիկ է";
+//   let str1 = "ություն";
+
+    
+//   let arr = str.split(" ");
 
 //  for(let i = 0; i < arr.length;i++){
 //     let index = arr[i].indexOf(str1);
@@ -74,22 +86,33 @@
 //     }
   
 //  }
+// //2
+// function check(str,str1) {
 
+//     let arr = str.split(" ");
+//     console.log(arr);
 
-//  let arr = [1,2,3]
-//  for(var i = 0; i<arr.length;i++);{
-//     console.log(arr[i])
-//  }
- 
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].includes(str1)){
+//             console.log(arr[i]);
+//         }
+            
+        
+//     }
+// }
+
+//  check("Հայաստանի լեռնաշխարհի բնությունը գեղեցիկ է","ություն");
+
 
  //================= object membrs and methods ==================
+
 // let u3 = new Object({
 //     name:"Aram",
 //     info(){
 //         return this.name
 //     }
 //  })
-//  console.log(u3)
+//   console.log(u3)
 
 //  let u1 = {
 //     name:"Aram",
@@ -97,6 +120,7 @@
 //         return this.name
 //     }
 //  }
+
 
 //  let u2 = {name:"Karen"};
 //  console.log(u1.info());
@@ -107,7 +131,7 @@
 // a1 and a2 they booth have property length
 //  let a1 = [1,2,3];
 //  let a2 = new Array(1,2,3)
-//  console.log(a2)
+//   console.log(a2)
 // console.log(a1.length,a1.toString())
 // let a3 = []
 // console.log(a3)
@@ -117,6 +141,7 @@
 //  let arr2 = new Array(4);
 // console.log(arr1)
 // console.log(arr2)
+
 
 // creatre new object with literals and constructor
 // let o1 = {name:"abc", age:25};
@@ -139,14 +164,15 @@
 //     this.addres = addres
 // }
 
-//    let u1 = new User("Aram",30,"Programmer","echmiadzin","gegam")
+//     let u1 = new User("Aram",30,"Programmer","echmiadzin","gegam");
 //   console.log(u1)
-//   let u2 = new User("Karen",25,"SysAdmin")
-//  u2.status = false;
-//  console.log(u2)
+//    let u2 = new User("Karen",25,"SysAdmin")
+//   u2.status = false;
+//   console.log(u2)
 
 //  let u3 = new User("Karen", 55)
 //  console.log(u3)
+
 
 //what constructor is run
 //console.log(u3.constructor)
@@ -162,41 +188,46 @@
 //     this.name = name;
 //     this.age = age;
 //     this.admin = false;
-//    // this.say = function(){console.log(this.name)}
+//     //this.say = function(){console.log(this.name)}
 // }
 
-// let user1 = new User("Garik",59);
+ //let user1 = new User("Garik",30);
 // let user2 = new User("Aram",22);
 
- // console.log(user1);
-// console.log(user2);
-
-// user1.say()
-// user2.say()
-
- //user1.say = 10;
- //console.log(user1);
-//  console.log(user1.say);
-//  delete user1.say;
 //  console.log(user1);
-// user1.say();
+//console.log(user2);
+
+//  user1.say()
+//  user2.say()
+
+//  user1.say = 10;
+//  console.log(user1);
+//   console.log(user1.say);
+//   delete user1.say;
+//   console.log(user1);
+ //user1.say();
+
+
 
 
 //2. Methods adds whith prototype
  //console.log(User.prototype);
  //User.prototype.say = function(){console.log(this.name)}
- //console.log(User.prototype)
-//  console.log(user1);
-// console.log(user2);
 
+ //console.log(User.prototype)
+  //user1.say();
+ //console.log(user1);
+//!======================================================================
 //example
 
-// let a2 = new Array(1,2,3)
-// console.log(a2)
-// Array.prototype.gugo = function(){console.log("hello")}
-// Object.prototype.gugo = function(){console.log("barev")}
+//  let a2 = new Array(1,2,3)
+//  console.log(a2)
+//  Array.prototype.gugo = function(){console.log("hello")}
+//  Object.prototype.gugo = function(){console.log("barev")}
 
-// a2.gugo()
+//  a2.gugo()
+//  let str = "a"
+//  str.gugo();
 // console.log(a2)
 
 //1.
@@ -204,7 +235,8 @@
 //     return Array.prototype.slice.call(arguments)
 // }
 
-// console.log(funk(1,2,3,4))
+//  console.log(funk(1,2,3,4))
+
 
 //2.
 // let n = 10 ;
@@ -226,18 +258,22 @@
     
 // }
 
-//   Object.prototype.x = 10;
-//   let u = new User("Karen", 25);
-//   console.log(u);
-//   console.log(u.x)
-//    let y = 3;
-//    console.log(y)
-//   console.log(y.x)
-//  let arr = [1,2,3]
-//  console.log(arr)
-//  console.log(arr.x)
+//    Object.prototype.x = 10;
+//    let u = new User("Karen", 25);
+//     console.log(u);
+//    console.log(u.x)
+//     let y = 3;
+//     console.log(y)
+//    console.log(y.x)
+
+//   let arr = [1,2,3]
+//   console.log(arr)
+//   console.log(arr.x)
 // let str = "hello";
 // console.log(str.x)
+
+
+
 
 // for(let i in u){
 //    //if(u.hasOwnProperty(i))
@@ -251,25 +287,29 @@
 //pub_year
 //price
 
-//show(); ֆունկցիայի PROTOTYPE ում ստեղծել մեոթդ, որը դուրս է 
+//show(); ֆունկցիայի PROTOTYPE ում ստեղծել մեթոդ, որը դուրս է 
 //բերում այդ գրքերի տվյալները։
 //book1, book2
+
 
 // function Book(title,pub_year,price){
 //     this.title = title;
 //     this.pub_year = pub_year;
 //     this.price = price;
-//     //this.show = function(){return this.price}
+   
+//     this.show = function(){return this.price}
 // }
+
 // Book.prototype.show = function(){
 //     return `${this.title}  ${this.pub_year}  ${this.price}`
 // }
 
-// let book1 = new Book("JS", 1998 , "30$");
+//let book1 = new Book("JS", 1998 , "30$");
 // let book2 = new Book("HTML",2009,"50$");
 
+// console.log(book1);
 
-// console.log(book1.show())
-// console.log(book2.show())
+// console.log(book1.show());
+// console.log(book2.show());
 
 //a * b = 2 *(a + b)
